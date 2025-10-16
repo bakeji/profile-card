@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article data-testid="test-profile-card">
+            <figure>
+                <img data-testid="test-user-avatar" src="https://res.cloudinary.com/dylpngsor/image/upload/v1760640016/pic_it8aga.jpg" alt="avatar">
+            </figure>
+            <h2 data-testid="test-user-name">Fatimoh Bakare</h2>
+            <p data-testid="test-user-bio">A passionate frontend developer that creates modern web experiences that not only look great but also perform seamlessly across devices.
+            </p>
+            <p data-testid="test-user-time"></p>
+
+
+            <section class="lists">
+                <section>
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>reading</li>
+                        <li>sitcoms</li>
+                        <li>music</li>
+                    </ul>
+                </section>
+    
+               <section>
+                <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Noise</li>
+                        <li>Conflicts</li>
+                        <li>coffee</li>
+                    </ul>
+               </section>
+            </section>
+
+           <section class="links">
+                <ul data-testid="test-user-social-links">
+                    <li test-user-social-twitter> <a href="https://x.com/keji___" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li test-user-social-linkedin> <a href="https://www.linkedin.com/in/fatimohbakare-3757b31a1/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
+                </ul>
+           </section>
+
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
