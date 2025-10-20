@@ -32,7 +32,7 @@ form.addEventListener('submit', (e)=>{
         subjectError.hidden = false;
         isValid = false;
         subjectError.setAttribute('aria-invalid', 'true');
-    }if (!message.value || message.value.length < 1){
+    }if (!message.value || message.value.length < 10){
         messageError.hidden = false;
         isValid = false;
         messageError.setAttribute('aria-invalid', 'true');
