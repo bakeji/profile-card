@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <main>
+        <p id="success" hidden role="status"></p>
+        <h1>Contact Form</h1>
+        <form id="form" novalidate >
+            <label  for="fullName">Full Name</label>
+            <input data-testid="test-contact-name" aria-describedby="name-error"  type="text" name="fullName" id="fullName" required>
+            <span id="name-error" data-testid="test-contact-error-fullname" hidden> Please enter your full Name</span>
+
+            <label for="email" >Email</label>
+            <input data-testid="test-contact-email" aria-describedby="email-error" type="email" name="email" id="email" required>
+            <span id="email-error" data-testid="test-contact-error-email" hidden> Please enter a valid email addres </span>
+
+            <label for="subject">Subject</label>
+            <input data-testid="test-contact-subject" aria-describedby="subject-error" type="text" name="subject" id="subject" required >
+            <span id="subject-error" data-testid="test-contact-error-subject" hidden> Please enter a subject </span>
+
+            <label for="message">message</label>
+            <textarea data-testid="test-contact-message" aria-describedby="message-error" name="message" id="message" required></textarea>
+            <span id="message-error" data-testid="test-contact-error-message" hidden> Please enter a subject </span>
+
+            <button data-testid="test-contact-submit" type="submit">Submit form</button>
+        </form>
+
+    </main>
+    <section class="btns">
+        <a href="/index.html">Profile card</a>
+        <a href="/aboutme.html">About me</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
